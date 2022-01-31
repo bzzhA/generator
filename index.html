@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="style.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generator passwords</title>
+</head>
+<body>
+<header>
+    <h1>Generator passwords</h1>
+    <img src="/image/lock.png" alt="Lock">
+</header>
+<main>
+  <form>
+    <section id="generatorForm">
+      <input id="input" type="text" value="" name="passwords">
+      <button id="copy_button" type="submit">Copy</button>
+      <button id="clear_button" type="submit">Clear form</button>
+    </section>
+    <div id="navigation">
+    <section id="generator_otions">
+      <p>Generator options</p>
+      <label><input id="checkboxNumbers" type="checkbox" name="numbers"> Number 0 - 9</label></br>
+      <label><input id="checkboxeng" type="checkbox" name="lowercase"> Lower Case a - z</label></br>
+      <label><input id="checkboxENG" type="checkbox" name="uppercase"> Upper Case A - Z</label></br>
+      <label><input id="checkboxSymbol" type="checkbox" name="symbols"> Symbols %, *, ),?, @, #, $, ~</label>
+    </section>
+    <section id="navigation">
+      <p>Password length</p>
+      <select id="dropmenu" name="menu">
+        <option value="4">4</option>
+        <option value="8">8</option>
+        <option value="16">16</option>
+        <option value="32">32</option>
+      </select>
+      <button id="generateButton" type="submit">
+        GENERATE
+      </button>
+    </section>
+  <div id="modalWindow" class="modal">
+    <div id="modal-content">
+      <span id="close">&times;</span>
+      <p style="font-size: 40px; color: white;">Select checkbox!</p>
+    </div>
+  </div>
+  </form>
+</main>
+<footer></footer>
+</body>
+<script src="script.js"></script>
+</html>
